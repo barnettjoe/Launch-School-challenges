@@ -1,0 +1,8 @@
+def scramble(sentence)
+  # convert str to array
+  # ["w", "h", "a", "t", "s", " ", "t", "h", "e"]... etc.
+  # iterate over letters
+  sentence.split.map.with_index { |x, i| i.even? ? x : x.reverse }.join(" ")
+end
+
+puts scramble("whats the matter with kansas.") #== "whats eht metter htiw kansas."
